@@ -22,7 +22,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.MapBlazorHub();
+app.MapBlazorHub(); 
 app.MapFallbackToPage("/_Host");
 
 app.Run();
