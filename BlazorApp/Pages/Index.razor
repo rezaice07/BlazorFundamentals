@@ -1,11 +1,13 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+<PageTitle>Home</PageTitle>
 
 @foreach(var item in contacts)
 {
-    <p>Name : <b>@item.FirstName @item.LastName</b> </p>
-    <p>Email : <b>@item.Email</b> </p>
+    @*<ContactListComponent FirstName="@item.FirstName" LastName="@item.LastName" Email="@item.Email"></ContactListComponent>*@
+    <ContactListComponent contact="@item"></ContactListComponent>
+    
+    <MyTextBox Placeholder="My Sample Placeholder"></MyTextBox>   
     <hr/>
 }
 
@@ -18,9 +20,9 @@
 
         contacts = new List<ContactModel>
         {
-        new ContactModel{FirstName="Rejwanul", LastName="Reja",Email="rezaice07@gmail.com" },
-        new ContactModel{FirstName="Khadiza", LastName="Jui",Email="rezaice07@gmail.com" },
-        new ContactModel{FirstName="Junainah Yousra", LastName="Roha",Email="roha@gmail.com" }
+            new ContactModel{FirstName="Rejwanul", LastName="Reja",Email="rezaice07@gmail.com" },
+            new ContactModel{FirstName="Khadiza", LastName="Jui",Email="rezaice07@gmail.com" },
+            new ContactModel{FirstName="Junainah Yousra", LastName="Roha",Email="roha@gmail.com" }
         };
     }
 }
