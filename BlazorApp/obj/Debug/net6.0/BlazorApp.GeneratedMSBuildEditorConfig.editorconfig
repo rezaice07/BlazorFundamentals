@@ -39,6 +39,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Learning/Applications/Blazor/BlazorFundamentals/BlazorApp/Pages/MarkupStr.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFya3VwU3RyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Learning/Applications/Blazor/BlazorFundamentals/BlazorApp/Pages/UserProfile.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclByb2ZpbGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
