@@ -1,19 +1,24 @@
 ﻿
 
 <p>Name : <b>@contact.FirstName @contact.LastName</b> </p>
-<p>Email : <b>@contact.Email</b> </p>
-
+@if (IsDislplayEmail)
+{
+    <p>Email : <b>@contact.Email</b> </p>
+}
+<button onclick="@(()=>{IsPersonDetail=!IsPersonDetail;})">Show Details</button>
+<br />
+@if (IsPersonDetail)
+{ 
+    <span>The Cellphone and address of @contact.FirstName @contact.LastName are @contact.Phone and @contact.Address </span>
+}
 
 @code {
 
     [Parameter]
     public ContactModel contact { get; set; }
-    //[Parameter]
-    //public string FirstName { get; set; }
 
-    //[Parameter]
-    //public string LastName { get; set; }
+    [Parameter]
+    public bool IsDislplayEmail { get; set; }
 
-    //[Parameter]
-    //public string Email { get; set; }
+    public bool IsPersonDetail { get; set; }
 }

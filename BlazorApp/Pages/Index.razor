@@ -2,17 +2,23 @@
 
 <PageTitle>Home</PageTitle>
 
+@*<input type="checkbox" onchange="@(()=>{displayEmailAddress=!displayEmailAddress;})" /><label>Display Email</label>*@
+@*two way binding using bind attribute*@
+<input type="checkbox" @bind="displayEmailAddress" /><label>Display Email</label>
+<br />
+
 @foreach(var item in contacts)
 {
     @*<ContactListComponent FirstName="@item.FirstName" LastName="@item.LastName" Email="@item.Email"></ContactListComponent>*@
-    <ContactListComponent contact="@item"></ContactListComponent>
+    <ContactListComponent IsDislplayEmail ="@displayEmailAddress" contact="@item"></ContactListComponent>
     
-    <MyTextBox Placeholder="My Sample Placeholder"></MyTextBox>   
+@*    <MyTextBox Placeholder="My Sample Placeholder"></MyTextBox>   *@
     <hr/>
 }
 
 @code {
     private List<ContactModel> contacts;
+    private bool displayEmailAddress = true;
 
     protected override void OnInitialized()
     {
@@ -20,9 +26,9 @@
 
         contacts = new List<ContactModel>
         {
-            new ContactModel{FirstName="Rejwanul", LastName="Reja",Email="rezaice07@gmail.com" },
-            new ContactModel{FirstName="Khadiza", LastName="Jui",Email="rezaice07@gmail.com" },
-            new ContactModel{FirstName="Junainah Yousra", LastName="Roha",Email="roha@gmail.com" }
+            new ContactModel{FirstName="Rejwanul", LastName="Reja",Email="rezaice07@gmail.com",Phone="8801718055626",Address="Dhaka, Bangladesh" },
+            new ContactModel{FirstName="Khadiza", LastName="Jui",Email="rezaice07@gmail.com" ,Phone="8801718055000",Address="Rangpur, Bangladesh" },
+            new ContactModel{FirstName="Junainah Yousra", LastName="Roha",Email="roha@gmail.com",Phone="8801718055776",Address="Rangpur, Bangladesh"  }
         };
     }
 }
