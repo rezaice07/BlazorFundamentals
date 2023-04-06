@@ -10,7 +10,7 @@
 @foreach(var item in contacts)
 {
     @*<ContactListComponent FirstName="@item.FirstName" LastName="@item.LastName" Email="@item.Email"></ContactListComponent>*@
-    <ContactListComponent IsDislplayEmail ="@displayEmailAddress" contact="@item"></ContactListComponent>
+    <ContactListComponent IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent>
     
 @*    <MyTextBox Placeholder="My Sample Placeholder"></MyTextBox>   *@
     <hr/>
@@ -19,6 +19,11 @@
 @code {
     private List<ContactModel> contacts;
     private bool displayEmailAddress = true;
+
+    private void DeleteContact(ContactModel contact)
+    {
+        contacts.Remove(contact);
+    }
 
     protected override void OnInitialized()
     {
