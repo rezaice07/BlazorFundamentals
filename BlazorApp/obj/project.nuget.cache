@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J+oDIdCMyvFmYcY94ztk+w2tEjvSWj1pJm+X0SqhXD08O2s8Sot1jBzsQDQGaR0ZOHZa2kM+zJkoZ5wTLLpPmg==",
+  "dgSpecHash": "P7n3DAWHTbOfymBMZg6lruvEDmvuZJnlCCzG1eGWbfxQLObVjFkhwxJ77d/634cMmoY+x24U0Od2uW1WVfXzeQ==",
   "success": true,
-  "projectFilePath": "D:\\Learning\\Applications\\Blazor\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
+  "projectFilePath": "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
