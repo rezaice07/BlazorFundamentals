@@ -31,5 +31,8 @@ static void ConfigurationServices(IServiceCollection services)
     services.AddRazorPages();
     services.AddServerSideBlazor();
     services.AddSingleton<WeatherForecastService>();
-    services.AddSingleton<ContactService>();
+    //services.AddSingleton<ContactService>();
+    services.AddSingleton<IContactService,ContactService>();   
+
+    //services.AddTransient<ContactService>();
 }

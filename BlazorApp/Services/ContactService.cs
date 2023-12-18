@@ -1,13 +1,19 @@
 ﻿using BlazorApp.Data;
+using BlazorApp.Pages.ContactComponents;
 
 namespace BlazorApp.Services
 {
-    public class ContactService
+    public class ContactService: IContactService
     {
-        public List<Contact> ContactList = new List<Contact>();
+        public List<Contact> contactList = new List<Contact>();
         public void AddContact(Contact contact)
         {
-            ContactList.Add(contact);
+            contactList.Add(contact);
+        }
+
+        public List<Contact> GetContacts()
+        {
+            return contactList;
         }
     }
 }

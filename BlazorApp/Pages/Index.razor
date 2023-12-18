@@ -1,22 +1,34 @@
 ﻿@page "/"
 
 <PageTitle>Home</PageTitle>
+<a href="/demo01">Add New Contacts</a>
+<br />
 
 @*<input type="checkbox" onchange="@(()=>{displayEmailAddress=!displayEmailAddress;})" /><label>Display Email</label>*@
 @*two way binding using bind attribute*@
 <input type="checkbox" @bind="displayEmailAddress" /><label>Display Email</label>
 <br />
-
-@foreach(var item in contacts)
+@if (contacts == null)
 {
-    @*<ContactListComponent FirstName="@item.FirstName" LastName="@item.LastName" Email="@item.Email"></ContactListComponent>*@
-    <ContactListComponent IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent>
-    
-@*    <MyTextBox Placeholder="My Sample Placeholder"></MyTextBox>   *@
-    <hr/>
+    <span class="loading">Contact is loading...</span>
+}
+else if (contacts.Count == 0)
+{
+    <span>No Contacts to be loaded!</span>
+}
+else
+{
+    @foreach (var item in contacts)
+    {
+        @*<ContactListComponent FirstName="@item.FirstName" LastName="@item.LastName" Email="@item.Email"></ContactListComponent>*@
+        <ContactListComponent IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent>
+
+        @*    <MyTextBox Placeholder="My Sample Placeholder"></MyTextBox>   *@
+        <hr />
+    }
 }
 
-@code {
+@* code {
     private List<ContactModel> contacts;
     private bool displayEmailAddress = true;
 
@@ -36,4 +48,4 @@
             new ContactModel{FirstName="Junainah Yousra", LastName="Roha",Email="roha@gmail.com",Phone="8801718055776",Address="Rangpur, Bangladesh"  }
         };
     }
-}
+} *@

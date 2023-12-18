@@ -1,0 +1,27 @@
+﻿@page "/demo02"
+@using BlazorApp.Services;
+
+@inject IContactService contactService
+
+<h3>Demo02</h3>
+
+@if (contactService.GetContacts().Count == 0)
+{
+    <br />
+
+    <b>No contact to display</b>
+}
+else
+{
+    @foreach (var contact in contactService.GetContacts())
+    {
+        <br />
+        <b>@contact.FirstName @contact.LastName</b>
+        <br /> <i>@contact.Email</i>
+        <br />
+        <hr />
+    }
+}
+<br />
+<a href="/demo01">Add New Contacts</a>
+
