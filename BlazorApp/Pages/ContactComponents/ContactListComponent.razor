@@ -1,20 +1,22 @@
-﻿
-
-<p>Name : <b>@contact.FirstName @contact.LastName</b> </p>
-@if (IsDislplayEmail)
+﻿@if (DisplayContact)
 {
-    <p>Email : <b>@contact.Email</b> </p>
+    <p>Name : <b>@contact.FirstName @contact.LastName</b> </p>
+    @if (IsDislplayEmail)
+    {
+        <p>Email : <b>@contact.Email</b> </p>
+    }
+    <button onclick="@(()=>{IsPersonDetail=!IsPersonDetail;})">Show Details</button>
+    <button onclick="@(()=>DeleteCurrentContact.InvokeAsync(contact))">Delete</button>
+    <br />
+    @if (IsPersonDetail)
+    {
+        <span>The Cellphone and address of @contact.FirstName @contact.LastName are @contact.Phone and @contact.Address </span>
+    }
 }
-<button onclick="@(()=>{IsPersonDetail=!IsPersonDetail;})">Show Details</button>
-<button onclick="@(()=>DeleteCurrentContact.InvokeAsync(contact))">Delete</button>
-<br />
-@if (IsPersonDetail)
-{ 
-    <span>The Cellphone and address of @contact.FirstName @contact.LastName are @contact.Phone and @contact.Address </span>
-}
+
+<span>@DisplayContact</span>
 
 @code {
-
     [Parameter]
     public Contact contact { get; set; }
 
@@ -25,4 +27,16 @@
     public bool IsDislplayEmail { get; set; }
 
     public bool IsPersonDetail { get; set; }
+
+    [Parameter]
+    public bool DisplayContact { get; set; }
+
+    // public void ShowContact() {  
+    //     displayContact = true;
+    // }
+
+    // public void HideContact()
+    // {
+    //     displayContact = false;
+    // }
 }

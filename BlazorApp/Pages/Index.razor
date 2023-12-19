@@ -4,6 +4,8 @@
 <a href="/demo01">Add New Contacts</a>
 <br />
 
+<br />
+
 @*<input type="checkbox" onchange="@(()=>{displayEmailAddress=!displayEmailAddress;})" /><label>Display Email</label>*@
 @*two way binding using bind attribute*@
 <input type="checkbox" @bind="displayEmailAddress" /><label>Display Email</label>
@@ -21,12 +23,16 @@ else
     @foreach (var item in contacts)
     {
         @*<ContactListComponent FirstName="@item.FirstName" LastName="@item.LastName" Email="@item.Email"></ContactListComponent>*@
-        <ContactListComponent IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent>
+        <ContactListComponent DisplayContact="isContactDisplayed" IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent>
 
         @*    <MyTextBox Placeholder="My Sample Placeholder"></MyTextBox>   *@
         <hr />
     }
 }
+
+<br />
+<button @onclick="HideContacts">Show/Hide Contacts</button>
+
 
 @* code {
     private List<ContactModel> contacts;
