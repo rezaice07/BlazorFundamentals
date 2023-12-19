@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp.Pages
+namespace BlazorApp.Shared
 {
     #line hidden
     using System;
@@ -103,8 +103,7 @@ using BlazorApp.Services;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
-    public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class DeleteConfirmation : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -112,13 +111,22 @@ using BlazorApp.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 11 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
+#line 23 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Shared\DeleteConfirmation.razor"
        
-    private int currentCount = 0;
+    private bool showPopup = false;
+    public string BodyContent { get; set; }
 
-    private void IncrementCount(int inc)
+    public Contact ContactToDelete { get; set; }
+
+    [Parameter]
+    public EventCallback<Contact> OnConfirmed { get; set; }
+
+    public void Show() => showPopup = true;
+    public void Hide() => showPopup = false;
+
+    private async Task Confirm()
     {
-        currentCount = currentCount + inc;
+        await OnConfirmed.InvokeAsync(ContactToDelete);
     }
 
 #line default

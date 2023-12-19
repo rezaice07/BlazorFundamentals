@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A34CrZ+XCMJeiEg6bbWwOU7DCnOZxwum35LY/9FL23gncsz+H358C5QDLBPkcJ2FmyQFh7fK6Vx4Bp/TReutPw==",
+  "dgSpecHash": "P7n3DAWHTbOfymBMZg6lruvEDmvuZJnlCCzG1eGWbfxQLObVjFkhwxJ77d/634cMmoY+x24U0Od2uW1WVfXzeQ==",
   "success": true,
-  "projectFilePath": "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

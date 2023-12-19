@@ -21,12 +21,15 @@ else
     @foreach (var item in contacts)
     {
         @*<ContactListComponent FirstName="@item.FirstName" LastName="@item.LastName" Email="@item.Email"></ContactListComponent>*@
-        <ContactListComponent IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent>
+        @*<ContactListComponent IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent>*@
+        <ContactListComponent IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="RequestPermission" contact="@item"></ContactListComponent>
 
         @*    <MyTextBox Placeholder="My Sample Placeholder"></MyTextBox>   *@
         <hr />
     }
 }
+
+<DeleteConfirmation @ref="deleteConfirmation" OnConfirmed="OnDeleteConfirmed"></DeleteConfirmation>
 
 @* code {
     private List<ContactModel> contacts;

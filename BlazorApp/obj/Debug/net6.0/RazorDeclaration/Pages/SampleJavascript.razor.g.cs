@@ -103,8 +103,8 @@ using BlazorApp.Services;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
-    public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/sample-javascript")]
+    public partial class SampleJavascript : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -112,18 +112,25 @@ using BlazorApp.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 11 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
+#line 9 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\SampleJavascript.razor"
        
-    private int currentCount = 0;
-
-    private void IncrementCount(int inc)
+    private string confirmData;
+    private void ShowAlert()
     {
-        currentCount = currentCount + inc;
+        jsRuntime.InvokeVoidAsync("alert","Welcome to JS RUN Time");
+    }
+
+    private async Task ShowConfirm()
+    {
+        var res = await jsRuntime.InvokeAsync<bool>("confirm", "Do you want to proceed?");
+
+        confirmData = res.ToString();
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime jsRuntime { get; set; }
     }
 }
 #pragma warning restore 1591
