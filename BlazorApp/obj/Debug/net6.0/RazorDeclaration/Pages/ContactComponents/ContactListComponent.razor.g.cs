@@ -111,9 +111,12 @@ using BlazorApp.Services;
         }
         #pragma warning restore 1998
 #nullable restore
+<<<<<<< HEAD
 #line 16 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\ContactComponents\ContactListComponent.razor"
+=======
+#line 19 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\ContactComponents\ContactListComponent.razor"
+>>>>>>> 5be1d013bce744ee6fc954f0591bff938eb618ac
        
-
     [Parameter]
     public Contact contact { get; set; }
 
@@ -124,6 +127,18 @@ using BlazorApp.Services;
     public bool IsDislplayEmail { get; set; }
 
     public bool IsPersonDetail { get; set; }
+
+    [Parameter]
+    public bool DisplayContact { get; set; }
+
+    // public void ShowContact() {  
+    //     displayContact = true;
+    // }
+
+    // public void HideContact()
+    // {
+    //     displayContact = false;
+    // }
 
 #line default
 #line hidden

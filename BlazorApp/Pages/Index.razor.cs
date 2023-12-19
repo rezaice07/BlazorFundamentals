@@ -1,4 +1,5 @@
 ﻿using BlazorApp.Data;
+using BlazorApp.Pages.ContactComponents;
 using BlazorApp.Services;
 using BlazorApp.Shared;
 using Microsoft.AspNetCore.Components;
@@ -18,7 +19,12 @@ namespace BlazorApp.Pages
         private DeleteConfirmation deleteConfirmation;
 
         private List<Contact> contacts;
+        private ContactListComponent contactListComponent;
+        private bool isContactDisplayed = true;
         private bool displayEmailAddress = true;
+        private bool displayContact = true;
+
+        
 
         //private async Task DeleteContact(Contact contact)
         //{
@@ -60,6 +66,21 @@ namespace BlazorApp.Pages
         public static Task<string> GetValueFromMethod()
         {
             return Task.FromResult<string>("Hello World!");
+        }
+
+        private void HideContacts()
+        {
+            isContactDisplayed = !isContactDisplayed;
+
+            
+            //if (isContactDisplayed)
+            //{
+            //    contactListComponent.ShowContact();
+            //}
+            //else
+            //{
+            //    contactListComponent.HideContact(); 
+            //}
         }
     }
 }
