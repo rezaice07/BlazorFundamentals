@@ -11,6 +11,8 @@ namespace BlazorApp.Pages
     public partial class Index
     {
         [Inject]
+        NavigationManager navManager { get; set; }
+        [Inject]
         IContactService contactService { get; set; }
 
         [Inject]
@@ -81,6 +83,11 @@ namespace BlazorApp.Pages
             //{
             //    contactListComponent.HideContact(); 
             //}
+        }
+
+        private void NavigateToTest()
+        {
+            navManager.NavigateTo("./testpage");
         }
     }
 }

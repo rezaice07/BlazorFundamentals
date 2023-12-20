@@ -1,8 +1,17 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "HXrGRTFWfwgHItJZmU+I6ZSkh/LXKgzLm1Mduw0SXDRVVibpKFJO3Ep185L0VQjxhvKyY0A5UvxdpYTxn7oV4w==",
+=======
+  "dgSpecHash": "A34CrZ+XCMJeiEg6bbWwOU7DCnOZxwum35LY/9FL23gncsz+H358C5QDLBPkcJ2FmyQFh7fK6Vx4Bp/TReutPw==",
+>>>>>>> ca863cfef3c4a20feb574a7e976ef25d5d55b6ce
   "success": true,
-  "projectFilePath": "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

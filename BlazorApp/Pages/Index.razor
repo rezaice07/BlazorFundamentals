@@ -1,4 +1,5 @@
 ﻿@page "/"
+@page "/index"
 
 <PageTitle>Home</PageTitle>
 <a href="/demo01">Add New Contacts</a>
@@ -23,25 +24,32 @@ else
     @foreach (var item in contacts)
     {
         @*<ContactListComponent FirstName="@item.FirstName" LastName="@item.LastName" Email="@item.Email"></ContactListComponent>*@
-<<<<<<< HEAD
+
         @*<ContactListComponent IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent>*@
-        <ContactListComponent IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="RequestPermission" contact="@item"></ContactListComponent>
-=======
-        <ContactListComponent DisplayContact="isContactDisplayed" IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent>
->>>>>>> 5be1d013bce744ee6fc954f0591bff938eb618ac
+        <ContactListComponent DisplayContact="isContactDisplayed" IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="RequestPermission" contact="@item"></ContactListComponent>
+
+        @* <ContactListComponent DisplayContact="isContactDisplayed" IsDislplayEmail="@displayEmailAddress" DeleteCurrentContact="DeleteContact" contact="@item"></ContactListComponent> *@
 
         @*    <MyTextBox Placeholder="My Sample Placeholder"></MyTextBox>   *@
         <hr />
     }
 }
 
-<<<<<<< HEAD
 <DeleteConfirmation @ref="deleteConfirmation" OnConfirmed="OnDeleteConfirmed"></DeleteConfirmation>
-=======
+
 <br />
 <button @onclick="HideContacts">Show/Hide Contacts</button>
 
->>>>>>> 5be1d013bce744ee6fc954f0591bff938eb618ac
+<br />
+<a href="./testpage">Test page directive</a>
+
+
+<br />
+<br />
+<br />
+<br />
+
+<button @onclick="NavigateToTest">Navigate to Test Page Directive</button>
 
 @* code {
     private List<ContactModel> contacts;
