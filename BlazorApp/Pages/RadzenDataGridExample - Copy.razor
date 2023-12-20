@@ -1,0 +1,22 @@
+﻿@page "/dropdown"
+@inject ProductService productService
+<h3>Drop Down Example</h3>
+@if (products == null)
+{
+    <p><em>Loading....</em></p>
+}
+else
+{
+    <RadzenDropDownDataGrid TValue="string" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" AllowFiltering="true"
+    AllowClear="true" Data="@products.Select(s=>new {ProductId=s.ProductId,ProductName=s.ProductName}).Distinct().AsQueryable()"
+                        TextProperty="ProductName" ValueProperty="ProductId" Style="margin-bottom:20px" Placeholder="Select...">
+
+    </RadzenDropDownDataGrid>
+}
+@code {
+    IEnumerable<Product> products;
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Task.Run(() => productService.ProductList());
+    }
+}
