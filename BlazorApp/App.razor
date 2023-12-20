@@ -5,8 +5,15 @@
     </Found>
     <NotFound>
         <PageTitle>Not found</PageTitle>
-        <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
+        @* <LayoutView Layout="@typeof(MainLayout)">
+        <p role="alert">Sorry, there's nothing at this address.</p>
+        </LayoutView> *@
+        @* <LayoutView Layout="@typeof(MainLayout)">
+            <p role="alert">Page Not found</p>
+        </LayoutView> *@
+
+        <LayoutView Layout="null">
+            <p role="alert">Page Not found</p>
         </LayoutView>
     </NotFound>
 </Router>

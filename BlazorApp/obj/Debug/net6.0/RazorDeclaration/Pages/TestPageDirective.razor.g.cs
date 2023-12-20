@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp.Pages.ContactComponents
+namespace BlazorApp.Pages
 {
     #line hidden
     using global::System;
@@ -103,7 +103,11 @@ using BlazorApp.Services;
 #line default
 #line hidden
 #nullable disable
-    public partial class MyTextBox : global::Microsoft.AspNetCore.Components.ComponentBase
+    [global::Microsoft.AspNetCore.Components.RouteAttribute("/testpage")]
+    [global::Microsoft.AspNetCore.Components.RouteAttribute("/testpage2")]
+    [global::Microsoft.AspNetCore.Components.RouteAttribute("/testpage/demo")]
+    [global::Microsoft.AspNetCore.Components.RouteAttribute("/testpage/{contactName}/{Age:int}")]
+    public partial class TestPageDirective : global::Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -111,15 +115,23 @@ using BlazorApp.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 5 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\ContactComponents\MyTextBox.razor"
+#line 22 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\TestPageDirective.razor"
        
+    [Parameter]
+    public string contactName { get; set; }
 
     [Parameter]
-    public string Placeholder { get; set; }
+    public int Age { get; set; }
+
+    private void NavigateToIndex()
+    {
+        navManager.NavigateTo("./index");
+    }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navManager { get; set; }
     }
 }
 #pragma warning restore 1591
