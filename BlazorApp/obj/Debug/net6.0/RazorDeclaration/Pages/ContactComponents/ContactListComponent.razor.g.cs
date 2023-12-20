@@ -103,19 +103,15 @@ using BlazorApp.Services;
 #line default
 #line hidden
 #nullable disable
-    public partial class ContactListComponent : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class ContactListComponent : global::Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
-        protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
+        protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
 #nullable restore
-<<<<<<< HEAD
-#line 16 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\ContactComponents\ContactListComponent.razor"
-=======
-#line 19 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\ContactComponents\ContactListComponent.razor"
->>>>>>> 5be1d013bce744ee6fc954f0591bff938eb618ac
+#line 19 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\ContactComponents\ContactListComponent.razor"
        
     [Parameter]
     public Contact contact { get; set; }
