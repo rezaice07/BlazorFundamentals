@@ -32,7 +32,9 @@ static void ConfigurationServices(IServiceCollection services)
     services.AddServerSideBlazor();
     services.AddSingleton<WeatherForecastService>();
     //services.AddSingleton<ContactService>();
-    services.AddSingleton<IContactService,ContactService>();   
+    services.AddSingleton<IContactService,ContactService>();
+    services.AddSingleton<ProductService>();
+
 
     //services.AddTransient<ContactService>();
 }

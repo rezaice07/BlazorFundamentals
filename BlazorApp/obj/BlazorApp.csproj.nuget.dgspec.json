@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj": {}
+    "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj": {}
   },
   "projects": {
-    "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj": {
+    "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
+        "projectUniqueName": "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
         "projectName": "BlazorApp",
-        "projectPath": "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
-        "packagesPath": "C:\\Users\\Dev\\.nuget\\packages\\",
-        "outputPath": "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorApp\\obj\\",
+        "projectPath": "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
+        "packagesPath": "C:\\Users\\Reja\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Reja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,14 +40,17 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "default"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[4.23.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,19 +65,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.25, 6.0.25]"
+              "version": "[6.0.11, 6.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -84,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
