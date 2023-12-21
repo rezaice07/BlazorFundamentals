@@ -1,0 +1,29 @@
+﻿@page "/datagrid"
+@inject ProductService productService
+<h3>Drop Down Example</h3>
+@if (products == null)
+{
+    <p><em>Loading....</em></p>
+}
+else
+{
+    <RadzenGrid AllowFiltering="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" AllowPaging="true" PageSize="4" AllowSorting="true" Data="@products" TItem="Product" ColumnWidth="150px">
+        <Columns>
+            <RadzenGridColumn TItem="Product" Property="ProductId" Title="Product ID"></RadzenGridColumn>
+            <RadzenGridColumn TItem="Product" Property="ProductName" Title="Product Name"></RadzenGridColumn>
+            <RadzenGridColumn TItem="Product" Property="PurchaseDate" Title="Purchase Date">
+                <Template Context="data">
+                    @String.Format("{0:d}", data.PurchaseDate)
+                </Template>
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="Product" Property="Price" Title="Price"></RadzenGridColumn>
+        </Columns>
+    </RadzenGrid>
+}
+@code {
+    IEnumerable<Product> products ;
+    protected override async Task OnInitializedAsync()
+    {
+        products = await Task.Run(() => productService.ProductList());
+    }
+}
