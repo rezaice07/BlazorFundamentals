@@ -190,7 +190,6 @@ D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\obj\Debug\net6.0\R
 D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\obj\Debug\net6.0\Razor\Pages\_Layout.cshtml.g.cs
 D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\obj\Debug\net6.0\BlazorApp.RazorAssemblyInfo.cache
 D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\obj\Debug\net6.0\BlazorApp.RazorAssemblyInfo.cs
-D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\obj\Debug\net6.0\BlazorApp.sourcelink.json
 D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\obj\Debug\net6.0\BlazorApp.RazorTargetAssemblyInfo.cache
 D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\obj\Debug\net6.0\BlazorApp.RazorTargetAssemblyInfo.cs
 D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\obj\Debug\net6.0\BlazorApp.Views.pdb

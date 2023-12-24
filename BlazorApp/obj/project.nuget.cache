@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "olqSYqw+5bFBbSFCA4q7f0MndVLINb5XHRjWaNj29y5t+ATUrdHyt8V6eTXh5JkZ4mIb5gi3kcDUGBw8yEE67A==",
+  "dgSpecHash": "4/n2F1GbbQAuhW9YodGHcJfvoLxNif3fsB/FuvwJfQxqFnbeziw/TX1d531RblQcuPh3GGC0WwHTjwzBWU+zaQ==",
   "success": true,
   "projectFilePath": "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorApp\\BlazorApp.csproj",
   "expectedPackageFiles": [
@@ -20,11 +20,7 @@
     "C:\\Users\\Dev\\.nuget\\packages\\radzen.blazor\\4.23.4\\radzen.blazor.4.23.4.nupkg.sha512",
     "C:\\Users\\Dev\\.nuget\\packages\\system.io.pipelines\\6.0.0\\system.io.pipelines.6.0.0.nupkg.sha512",
     "C:\\Users\\Dev\\.nuget\\packages\\system.linq.dynamic.core\\1.3.7\\system.linq.dynamic.core.1.3.7.nupkg.sha512",
-    "C:\\Users\\Dev\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Dev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+    "C:\\Users\\Dev\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
