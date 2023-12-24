@@ -8,8 +8,22 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<br />
+
+<input @bind-value="number1" />
+<br />
+<input @bind-value="number2" />
+<br />
+<button @onclick="()=>{ result=number1+number2;}">Sum</button>
+<span>@result</span>
+
 @code {
     private int currentCount = 0;
+
+    private int number1 = 0;
+    private int number2 = 0;
+    private int result = 0;
+
 
     private void IncrementCount()
     {
