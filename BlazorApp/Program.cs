@@ -1,7 +1,11 @@
+using BlazorApp.Authentication;
 using BlazorApp.Data;
 using BlazorApp.Services;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.JSInterop;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,7 +38,11 @@ static void ConfigurationServices(IServiceCollection services)
     //services.AddSingleton<ContactService>();
     services.AddSingleton<IContactService,ContactService>();
     services.AddSingleton<ProductService>();
-
+    services.AddSingleton<UserAccountService>();
+    
+    services.AddSingleton<ProtectedSessionStorage>();
+    services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+    services.AddScoped<IJSRuntime>();
 
     //services.AddTransient<ContactService>();
 }

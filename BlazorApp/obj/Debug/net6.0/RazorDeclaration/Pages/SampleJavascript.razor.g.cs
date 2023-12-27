@@ -117,6 +117,13 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\SampleJavascript.razor"
+           [Authorize(Roles = "Administrator")]
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/sample-javascript")]
     public partial class SampleJavascript : global::Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -126,7 +133,7 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\SampleJavascript.razor"
+#line 11 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\SampleJavascript.razor"
        
     private string confirmData;
     private void ShowAlert()

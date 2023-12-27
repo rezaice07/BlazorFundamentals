@@ -117,6 +117,13 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\TestPageDirective.razor"
+           [Authorize(Roles = "Administrator")]
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/testpage")]
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/testpage2")]
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/testpage/demo")]
@@ -129,7 +136,7 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 22 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\TestPageDirective.razor"
+#line 23 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\TestPageDirective.razor"
        
     [Parameter]
     public string contactName { get; set; }

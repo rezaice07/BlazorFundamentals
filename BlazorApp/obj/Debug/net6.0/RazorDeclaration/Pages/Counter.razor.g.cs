@@ -117,6 +117,13 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
+           [Authorize(Roles = "Administrator,User")]
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : global::Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -126,7 +133,7 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 11 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
+#line 13 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
        
     private int currentCount = 0;
 

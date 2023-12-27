@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp", "BlazorApp\Blaz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWasm", "BlazorAppWasm\BlazorAppWasm.csproj", "{B284AB40-F6F1-4657-A304-D17EB9C00CFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppWasmHosted.Server", "BlazorAppWasmHosted\Server\BlazorAppWasmHosted.Server.csproj", "{7112118C-95CD-4E5D-BDC2-7B270CE9ABB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWasmHosted.Server", "BlazorAppWasmHosted\Server\BlazorAppWasmHosted.Server.csproj", "{7112118C-95CD-4E5D-BDC2-7B270CE9ABB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppWasmHosted.Client", "BlazorAppWasmHosted\Client\BlazorAppWasmHosted.Client.csproj", "{6693B2E1-AB2B-41DE-9239-A41459F8AC70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWasmHosted.Client", "BlazorAppWasmHosted\Client\BlazorAppWasmHosted.Client.csproj", "{6693B2E1-AB2B-41DE-9239-A41459F8AC70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppWasmHosted.Shared", "BlazorAppWasmHosted\Shared\BlazorAppWasmHosted.Shared.csproj", "{6FCF1EF7-C854-4EF0-A431-506C5B025386}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWasmHosted.Shared", "BlazorAppWasmHosted\Shared\BlazorAppWasmHosted.Shared.csproj", "{6FCF1EF7-C854-4EF0-A431-506C5B025386}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

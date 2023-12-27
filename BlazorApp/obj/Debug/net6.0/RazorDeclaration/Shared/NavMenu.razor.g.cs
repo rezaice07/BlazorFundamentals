@@ -125,7 +125,7 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 61 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Shared\NavMenu.razor"
+#line 74 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

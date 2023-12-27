@@ -1,6 +1,8 @@
 ﻿@page "/"
 @page "/index"
 
+@attribute [Authorize(Roles = "Administrator,User")]
+
 <PageTitle>Home</PageTitle>
 <a href="/demo01">Add New Contacts</a>
 <br />
