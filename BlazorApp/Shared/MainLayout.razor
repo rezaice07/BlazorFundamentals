@@ -19,7 +19,7 @@
                     <a @onclick="Logout" href="javascript:void(0);">Logout</a>
                 </Authorized>
                 <NotAuthorized>
-                    <a href="/login">Login</a>
+                    <a href="./login">Login</a>
                 </NotAuthorized>
             </AuthorizeView>
         </div>
@@ -35,6 +35,6 @@
     {
         var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
         await customAuthStateProvider.UpdateAuthenticationState(null);
-        navManager.NavigateTo("/",true);
+        navManager.NavigateTo("/login",true);
     }
 }

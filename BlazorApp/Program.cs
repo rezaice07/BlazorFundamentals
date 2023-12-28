@@ -32,17 +32,18 @@ app.Run();
 
 static void ConfigurationServices(IServiceCollection services)
 {
+    services.AddAuthenticationCore();
     services.AddRazorPages();
     services.AddServerSideBlazor();
     services.AddSingleton<WeatherForecastService>();
     //services.AddSingleton<ContactService>();
     services.AddSingleton<IContactService,ContactService>();
     services.AddSingleton<ProductService>();
-    services.AddSingleton<UserAccountService>();
     
-    services.AddSingleton<ProtectedSessionStorage>();
+    services.AddScoped<ProtectedSessionStorage>();
     services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
-    services.AddScoped<IJSRuntime>();
+
+    services.AddSingleton<UserAccountService>();
 
     //services.AddTransient<ContactService>();
 }

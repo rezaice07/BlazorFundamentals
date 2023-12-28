@@ -138,7 +138,7 @@ using BlazorApp.Authentication;
     {
         var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
         await customAuthStateProvider.UpdateAuthenticationState(null);
-        navManager.NavigateTo("/",true);
+        navManager.NavigateTo("/login",true);
     }
 
 #line default

@@ -118,13 +118,12 @@ using Radzen.Blazor;
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\Index.razor"
+#line 3 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\Index.razor"
            [Authorize(Roles = "Administrator,User")]
 
 #line default
 #line hidden
 #nullable disable
-    [global::Microsoft.AspNetCore.Components.RouteAttribute("/")]
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/index")]
     public partial class Index : global::Microsoft.AspNetCore.Components.ComponentBase
     {
