@@ -1,0 +1,11 @@
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\bin\Debug\net6.0\BlazorAppWasmHosted.Shared.deps.json
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\bin\Debug\net6.0\BlazorAppWasmHosted.Shared.dll
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\bin\Debug\net6.0\BlazorAppWasmHosted.Shared.pdb
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\obj\Debug\net6.0\BlazorAppWasmHosted.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\obj\Debug\net6.0\BlazorAppWasmHosted.Shared.AssemblyInfoInputs.cache
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\obj\Debug\net6.0\BlazorAppWasmHosted.Shared.AssemblyInfo.cs
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\obj\Debug\net6.0\BlazorAppWasmHosted.Shared.csproj.CoreCompileInputs.cache
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\obj\Debug\net6.0\BlazorAppWasmHosted.Shared.dll
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\obj\Debug\net6.0\refint\BlazorAppWasmHosted.Shared.dll
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\obj\Debug\net6.0\BlazorAppWasmHosted.Shared.pdb
+D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasmHosted\Shared\obj\Debug\net6.0\ref\BlazorAppWasmHosted.Shared.dll

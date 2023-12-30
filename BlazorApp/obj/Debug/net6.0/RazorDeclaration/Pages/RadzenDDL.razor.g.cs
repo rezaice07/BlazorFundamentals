@@ -117,6 +117,13 @@ using Radzen.Blazor;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\RadzenDDL.razor"
+           [Authorize(Roles ="Administrator")]
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/dropdown")]
     public partial class RadzenDDL : global::Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -126,7 +133,11 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
+<<<<<<< HEAD
 #line 16 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\RadzenDDL.razor"
+=======
+#line 19 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\RadzenDDL.razor"
+>>>>>>> cacbe287b1013688671856c9e9c51a1c0b137161
        
     IEnumerable<Product> products;
     protected override async Task OnInitializedAsync()

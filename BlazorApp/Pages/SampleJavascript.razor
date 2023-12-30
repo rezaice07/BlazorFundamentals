@@ -1,5 +1,7 @@
 ﻿
 @page "/sample-javascript";
+@attribute [Authorize(Roles = "Administrator")]
+
 @inject IJSRuntime jsRuntime;
 <h3>Sample Javascript</h3>
 <span>@confirmData</span>

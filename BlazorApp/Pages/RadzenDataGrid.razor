@@ -1,4 +1,7 @@
 ﻿@page "/datagrid"
+
+@attribute [Authorize(Roles = "Administrator")]
+
 @inject ProductService productService
 <h3>Drop Down Example</h3>
 @if (products == null)

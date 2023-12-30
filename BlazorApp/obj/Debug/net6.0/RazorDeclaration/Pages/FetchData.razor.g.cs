@@ -111,8 +111,19 @@ using Radzen.Blazor;
 #line hidden
 #nullable disable
 #nullable restore
+<<<<<<< HEAD
 #line 5 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
+=======
+#line 7 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
+>>>>>>> cacbe287b1013688671856c9e9c51a1c0b137161
 using BlazorApp.Data;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
+           [Authorize(Roles ="Administrator")]
 
 #line default
 #line hidden
@@ -126,7 +137,11 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
+<<<<<<< HEAD
 #line 41 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
+=======
+#line 43 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
+>>>>>>> cacbe287b1013688671856c9e9c51a1c0b137161
        
     private WeatherForecast[]? forecasts;
 
