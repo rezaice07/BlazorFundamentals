@@ -7,11 +7,11 @@
 namespace BlazorApp.Shared
 {
     #line hidden
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
+    using global::System;
+    using global::System.Collections.Generic;
+    using global::System.Linq;
+    using global::System.Threading.Tasks;
+    using global::Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\_Imports.razor"
 using System.Net.Http;
@@ -125,11 +125,7 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-<<<<<<< HEAD
-#line 61 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Shared\NavMenu.razor"
-=======
-#line 74 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Shared\NavMenu.razor"
->>>>>>> cacbe287b1013688671856c9e9c51a1c0b137161
+#line 74 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

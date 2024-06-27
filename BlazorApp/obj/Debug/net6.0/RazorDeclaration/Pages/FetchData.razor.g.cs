@@ -7,11 +7,11 @@
 namespace BlazorApp.Pages
 {
     #line hidden
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
+    using global::System;
+    using global::System.Collections.Generic;
+    using global::System.Linq;
+    using global::System.Threading.Tasks;
+    using global::Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\_Imports.razor"
 using System.Net.Http;
@@ -111,18 +111,14 @@ using Radzen.Blazor;
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
-#line 5 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
-=======
-#line 7 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
->>>>>>> cacbe287b1013688671856c9e9c51a1c0b137161
+#line 7 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
 using BlazorApp.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
+#line 3 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
            [Authorize(Roles ="Administrator")]
 
 #line default
@@ -137,11 +133,7 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-<<<<<<< HEAD
-#line 41 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
-=======
-#line 43 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
->>>>>>> cacbe287b1013688671856c9e9c51a1c0b137161
+#line 43 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\FetchData.razor"
        
     private WeatherForecast[]? forecasts;
 

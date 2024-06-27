@@ -7,11 +7,11 @@
 namespace BlazorApp.Pages
 {
     #line hidden
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
+    using global::System;
+    using global::System.Collections.Generic;
+    using global::System.Linq;
+    using global::System.Threading.Tasks;
+    using global::Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\_Imports.razor"
 using System.Net.Http;

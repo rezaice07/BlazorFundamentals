@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorAppWasm\\BlazorAppWasm.csproj": {}
+    "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorAppWasm\\BlazorAppWasm.csproj": {}
   },
   "projects": {
-    "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorAppWasm\\BlazorAppWasm.csproj": {
+    "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorAppWasm\\BlazorAppWasm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorAppWasm\\BlazorAppWasm.csproj",
+        "projectUniqueName": "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorAppWasm\\BlazorAppWasm.csproj",
         "projectName": "BlazorAppWasm",
-        "projectPath": "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorAppWasm\\BlazorAppWasm.csproj",
-        "packagesPath": "C:\\Users\\Dev\\.nuget\\packages\\",
-        "outputPath": "D:\\Learning\\blazor\\projects\\repo\\BlazorFundamentals\\BlazorAppWasm\\obj\\",
+        "projectPath": "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorAppWasm\\BlazorAppWasm.csproj",
+        "packagesPath": "C:\\Users\\Reja\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\Blazor\\BlazorFundamentals\\BlazorAppWasm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Reja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,6 +40,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,6 +59,24 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.21, )"
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -68,8 +92,20 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.30, 6.0.30]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.30, 6.0.30]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.22, 6.0.22]"
+              "version": "[6.0.30, 6.0.30]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.30, 6.0.30]"
             }
           ],
           "frameworkReferences": {
@@ -77,7 +113,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

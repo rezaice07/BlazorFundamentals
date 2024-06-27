@@ -8,8 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorApp
-<<<<<<< HEAD
 build_property.ProjectDir = D:\Learning\Blazor\BlazorFundamentals\BlazorApp\
-=======
-build_property.ProjectDir = D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\
->>>>>>> cacbe287b1013688671856c9e9c51a1c0b137161
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

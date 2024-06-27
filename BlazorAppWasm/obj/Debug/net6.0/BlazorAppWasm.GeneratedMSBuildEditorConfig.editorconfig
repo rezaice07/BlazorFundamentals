@@ -1,4 +1,8 @@
 is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net6.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -9,41 +13,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = BlazorAppWasm
 build_property.RootNamespace = BlazorAppWasm
-build_property.ProjectDir = D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasm\
+build_property.ProjectDir = D:\Learning\Blazor\BlazorFundamentals\BlazorAppWasm\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorAppWasm
+build_property.MSBuildProjectDirectory = D:\Learning\Blazor\BlazorFundamentals\BlazorAppWasm
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Learning/blazor/projects/repo/BlazorFundamentals/BlazorAppWasm/App.razor]
+[D:/Learning/Blazor/BlazorFundamentals/BlazorAppWasm/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Learning/blazor/projects/repo/BlazorFundamentals/BlazorAppWasm/Pages/Counter.razor]
+[D:/Learning/Blazor/BlazorFundamentals/BlazorAppWasm/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Learning/blazor/projects/repo/BlazorFundamentals/BlazorAppWasm/Pages/FetchData.razor]
+[D:/Learning/Blazor/BlazorFundamentals/BlazorAppWasm/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Learning/blazor/projects/repo/BlazorFundamentals/BlazorAppWasm/Pages/Index.razor]
+[D:/Learning/Blazor/BlazorFundamentals/BlazorAppWasm/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Learning/blazor/projects/repo/BlazorFundamentals/BlazorAppWasm/Shared/SurveyPrompt.razor]
+[D:/Learning/Blazor/BlazorFundamentals/BlazorAppWasm/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Learning/blazor/projects/repo/BlazorFundamentals/BlazorAppWasm/_Imports.razor]
+[D:/Learning/Blazor/BlazorFundamentals/BlazorAppWasm/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Learning/blazor/projects/repo/BlazorFundamentals/BlazorAppWasm/Shared/MainLayout.razor]
+[D:/Learning/Blazor/BlazorFundamentals/BlazorAppWasm/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-xtm1pvsfs6
 
-[D:/Learning/blazor/projects/repo/BlazorFundamentals/BlazorAppWasm/Shared/NavMenu.razor]
+[D:/Learning/Blazor/BlazorFundamentals/BlazorAppWasm/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-kyq7kmqhu4

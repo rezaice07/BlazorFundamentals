@@ -7,11 +7,11 @@
 namespace BlazorApp.Pages
 {
     #line hidden
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Components;
+    using global::System;
+    using global::System.Collections.Generic;
+    using global::System.Linq;
+    using global::System.Threading.Tasks;
+    using global::Microsoft.AspNetCore.Components;
 #nullable restore
 #line 1 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\_Imports.razor"
 using System.Net.Http;
@@ -118,7 +118,7 @@ using Radzen.Blazor;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
+#line 3 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
            [Authorize(Roles = "Administrator,User")]
 
 #line default
@@ -133,11 +133,7 @@ using Radzen.Blazor;
         }
         #pragma warning restore 1998
 #nullable restore
-<<<<<<< HEAD
-#line 11 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
-=======
-#line 13 "D:\Learning\blazor\projects\repo\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
->>>>>>> cacbe287b1013688671856c9e9c51a1c0b137161
+#line 13 "D:\Learning\Blazor\BlazorFundamentals\BlazorApp\Pages\Counter.razor"
        
     private int currentCount = 0;
 
